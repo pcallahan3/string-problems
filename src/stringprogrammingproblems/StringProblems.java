@@ -17,15 +17,16 @@ public class StringProblems {
 	 *   3. Using a for loop set the index to the first index of the array of characters and loop until the index is greater than or equal to 0,
 	 *      and decrement the index.
 	 *   4. Print the character arrays index.
+	 *   
+	 * Space and time complexity analysis of reverseAString(): O(1 + 1) + O(n) = O(n)
+	 *                                       reverseAString() = O(n) time complexity 
 	 *     
 	 */
 	
 	static void reverseAString(String str) {
-		
-		char[] stringChars = str.toCharArray();
-		for(int i = stringChars.length - 1;i >= 0;i--) {
-			
-			System.out.print(stringChars[i]);
+		char[] stringChars = str.toCharArray();//O(1) constant time complexity 
+		for(int i = stringChars.length - 1;i >= 0;i--) {//O(n) linear time complexity 
+			System.out.print(stringChars[i]);//O(1)constant time complexity 
 		}
 		
 		
